@@ -1,0 +1,55 @@
+.baher {
+  background-image: url(../../images/Rectangle.svg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.baner--container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-wrapper {
+  width: 50%;
+}
+
+.baner--main-text {
+  padding-top: 34px;
+
+  font-size: 48px;
+  font-weight: 400;
+
+  color: #ffffff;
+}
+
+.text-with-bolb-weight {
+  font-weight: bold;
+}
+
+.baner--text {
+  padding-top: 24px;
+  padding-bottom: 32px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+
+  letter-spacing: 0.8px;
+
+  color: #ffffff;
+}
+
+.baner--btn {
+  padding: 16px 34px;
+
+  font-size: 16px;
+  line-height: 23px;
+
+  border: none;
+  border-radius: 8px;
+
+  color: #3a80ba;
+  background: #ffffff;
+}

@@ -1,0 +1,37 @@
+.plaginator-wrapper {
+  padding: 24px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plaginator--item-list {
+  display: flex;
+  align-items: center;
+}
+.plaginator--item {
+  margin: 0 4px;
+  padding: 14px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: center;
+
+  border-radius: 8px;
+
+  border: 2px solid #f1f1f1;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.prev {
+  margin-right: 20px;
+}
+.next {
+  margin-left: 20px;
+}
+
+svg > path {
+  stroke: rgb(243, 35, 35);
+}

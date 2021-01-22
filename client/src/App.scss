@@ -1,0 +1,30 @@
+@import "./styles/normalize.scss";
+@import "./styles/variables.scss";
+
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  letter-spacing: 1.7px;
+}
+
+.body {
+  font-family: $mainFont;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.page--wrapper {
+  height: max-content;
+}
+
+@import "./components/Header/HeaderStyles.scss";
+@import "./components/Baner/Baner.scss";
+@import "./components/OurProjects/OurProjects.scss";
+@import "./components/SiteNavigatiom/SiteNavigation.scss";
+@import "./components/Statistics/Statistics.scss";
+@import "./components/Footer/Footer.scss";
+@import "./components/Plaginator/Plaginator.scss";
