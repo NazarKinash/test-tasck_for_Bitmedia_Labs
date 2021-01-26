@@ -1,0 +1,39 @@
+.diagram-wrapper {
+  width: 100%;
+}
+
+.period-selector {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  justify-content: flex-end;
+}
+
+.period-selector--text {
+  padding: 5px;
+}
+
+.date-picer {
+  width: 150px;
+
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid $mainBorderColor;
+  border-radius: 8px;
+}
+
+.period-btn {
+  margin-left: 10px;
+
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  padding: 7px 16px;
+  background-color: $mainBackgroundColor;
+  color: #f1f1f1;
+  border-style: none;
+  border-radius: 8px;
+}

@@ -1,17 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const loc = ["mainPage", "usersListPage"];
-
-const SiteNavigation = () => {
+const SiteNavigation = ({ location }) => {
   return (
     <div className="navigation">
       <div className="container">
-        {!!loc.length &&
-          loc.map((el, i) => (
-            <NavLink className="navigation--link" activeClassName="navigation--link__active" to="/" key={el + i}>
-              {`${el} >`}
-            </NavLink>
+        {!!location.length &&
+          location.map((el, i) => (
+            <Link
+              className={i + 1 !== location.length ? "navigation--link" : "navigation--link navigation--link__active"}
+              to={el.to}
+              key={el.title + i}
+            >
+              {i + 1 !== location.length ? `${el.title} > ` : `${el.title}`}
+            </Link>
           ))}
       </div>
     </div>

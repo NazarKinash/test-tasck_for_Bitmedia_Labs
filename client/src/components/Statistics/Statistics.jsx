@@ -1,8 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const usersArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
-
-const Statistics = () => {
+const Statistics = ({ usersList }) => {
   return (
     <div>
       <div className="container">
@@ -19,19 +18,19 @@ const Statistics = () => {
             <p className="column--item__header">Total page views</p>
           </div>
           <div className="table--body">
-            {usersArr &&
-              !!usersArr.length &&
-              usersArr.map((el, i) => (
-                <div className="table--row " key={"id" + i}>
-                  <p className="column--item">id</p>
-                  <p className="column--item">First name</p>
-                  <p className="column--item">Last name</p>
-                  <p className="column--item">Email</p>
-                  <p className="column--item">Genger</p>
-                  <p className="column--item">IP adderes</p>
-                  <p className="column--item">Total clicks</p>
-                  <p className="column--item">Total page views</p>
-                </div>
+            {usersList &&
+              !!usersList.length &&
+              usersList.map((el, i) => (
+                <Link to={`/users/${el.id}`} key={`${el.id}`} className="table--row ">
+                  <p className="column--item">{el.id}</p>
+                  <p className="column--item">{el.first_name}</p>
+                  <p className="column--item">{el.last_name}</p>
+                  <p className="column--item">{el.email}</p>
+                  <p className="column--item">{el.gender}</p>
+                  <p className="column--item">{el.ip_address}</p>
+                  <p className="column--item">{el.total_clicks}</p>
+                  <p className="column--item">{el.total_page_views}</p>
+                </Link>
               ))}
           </div>
         </div>

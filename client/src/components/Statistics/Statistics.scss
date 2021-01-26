@@ -6,31 +6,37 @@
   font-size: 32px;
   line-height: 39px;
 
-  color: #1a1a1a;
+  color: $darkTextColor;
 }
 
 .table--row {
   display: grid;
-  grid-template-columns: 64px 150px 134px 240px 112px 147px 152px 180px;
+  grid-template-columns: 56px 150px 134px 248px 112px 147px 152px 180px;
   grid-column-gap: 1px;
+  text-decoration: none;
+
+  color: $darkTextColor;
 }
 
 .column--item__header,
 .column--item {
-  padding: 6px 24px;
+  padding: 6px 6px;
 
   text-align: left;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 1px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .column--item__header {
   padding-top: 16px;
   padding-bottom: 16px;
 
-  background: #3a80ba;
-  color: #ffffff;
+  background: $mainBackgroundColor;
+  color: $lightTextColor;
 }
 
 .table--row:last-child > p:first-child {
@@ -41,7 +47,7 @@
 }
 
 .table--row:nth-child(2n) > p {
-  background-color: #f1f1f1;
+  background-color: $mainBorderColor;
 }
 
 .table--row__header > p:first-child {

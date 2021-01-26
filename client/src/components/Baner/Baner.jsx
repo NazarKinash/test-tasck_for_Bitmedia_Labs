@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import mobileImg from "../../images/mobile.svg";
 
 const Baner = () => {
@@ -14,9 +15,11 @@ const Baner = () => {
               Our design projects are fresh and simple and will benefit your business greatly. Learn more about our
               work!
             </p>
-            <button className="baner--btn">Views Stats</button>
+            <Link to="users" className="baner--btn">
+              Views Stats
+            </Link>
           </div>
-          <img src={mobileImg} alt="" />
+          <img src={mobileImg} alt="mobile" />
         </div>
       </div>
     </div>

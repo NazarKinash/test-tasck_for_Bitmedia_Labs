@@ -12,7 +12,7 @@
 
   color: #cccccc;
 }
-
+.navigation--link:hover,
 .navigation--link__active {
-  color: #3a80ba;
+  color: $mainBackgroundColor;
 }

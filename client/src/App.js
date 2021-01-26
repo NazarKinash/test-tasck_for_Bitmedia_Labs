@@ -1,6 +1,6 @@
+import { Route, Switch } from "react-router-dom";
 import "./App.scss";
 import Header from "./components/Header/Header";
-// import UserData from "./components/UserData/UserData";
 import MaimPage from "./containers/MainPage/MaimPage";
 import UserListPage from "./containers/UserListPage/UserListPage";
 import UserPage from "./containers/UserPsge/UserPage";
@@ -9,9 +9,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MaimPage />
-      <UserListPage />
-      <UserPage />
+      <Switch>
+        <Route exact path="/" component={MaimPage} />
+        <Route exact path="/users" component={UserListPage} />
+        <Route path="/users/:id" component={UserPage} />
+      </Switch>
     </div>
   );
 }

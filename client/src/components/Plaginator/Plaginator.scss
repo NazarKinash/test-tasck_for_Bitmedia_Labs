@@ -10,8 +10,9 @@
   align-items: center;
 }
 .plaginator--item {
+  width: 56px;
   margin: 0 4px;
-  padding: 14px 20px;
+  padding: 14px 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -20,18 +21,28 @@
 
   border-radius: 8px;
 
-  border: 2px solid #f1f1f1;
+  border: 2px solid $mainBorderColor;
   box-sizing: border-box;
   border-radius: 8px;
+
+  cursor: pointer;
+}
+.plaginator--item:active,
+.plaginator--item__active {
+  background-color: $mainBackgroundColor;
+  border-color: $mainBackgroundColor;
+  color: $lightTextColor;
 }
 
-.prev {
-  margin-right: 20px;
+.plaginator--item__no-visible {
+  display: none;
 }
+
+.arrov-acdive > svg > path {
+  stroke: $mainBackgroundColor;
+}
+.prev,
 .next {
-  margin-left: 20px;
-}
-
-svg > path {
-  stroke: rgb(243, 35, 35);
+  margin: 20px;
+  cursor: pointer;
 }
