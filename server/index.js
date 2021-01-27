@@ -5,6 +5,8 @@ const cors = require("cors");
 
 const { userStatistics, createTables } = require("./db/sqliteDB");
 
+const PORT = process.env.PORT || 80;
+
 createTables();
 
 app.use(cors());
@@ -63,4 +65,4 @@ app.get("/users/user/:user_id", (req, res) => {
   });
 });
 
-app.listen(4848, (err) => (err ? console.log(err) : console.log(`Server started: ${4848}`)));
+app.listen(PORT, (err) => (err ? console.log(err) : console.log(`Server started: ${PORT}`)));
