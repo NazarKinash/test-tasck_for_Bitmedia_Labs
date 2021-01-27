@@ -52,7 +52,7 @@ const UserData = ({ data }) => {
             selected={fromDate}
             locale={en}
             dateFormat="yyyy-MM-dd"
-            onChange={(date) => setFromDate(date.valueOf())}
+            onChange={(date) => date && setFromDate(date.valueOf())}
           />
           <p className="period-selector--text">{`to: `}</p>
           <DatePicker
@@ -61,7 +61,7 @@ const UserData = ({ data }) => {
             selected={toDate}
             locale={en}
             dateFormat="yyyy-MM-dd"
-            onChange={(date) => setToDate(date.valueOf())}
+            onChange={(date) => date && setToDate(date.valueOf())}
           />
           <input type="submit" className="period-btn" value="Find" />
         </form>
